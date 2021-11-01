@@ -75,7 +75,7 @@ async function getSwTasks(): Promise<vscode.Task[]> {
 							aname = "build -e";
 						}
 						var cmd = "sw " + aname +
-							" --compiler " + compiler
+							" --compiler " + compiler +
 							" -" + stsh +
 							" --config " + configuration[1] +
 							" --config-name " + bname + ""
