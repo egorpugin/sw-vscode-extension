@@ -4,7 +4,7 @@
 	"repository": {"type": "git", "url": "https://github.com/egorpugin/sw-vscode-extension"},
 	"displayName": "sw",
 	"description": "sw assistant",
-	"version": "0.0.6",
+	"version": "0.0.9",
 	"engines": {
 		"vscode": "^1.61.0"
 	},
@@ -29,6 +29,26 @@
 					"task": {
 						"type": "string",
 						"description": "The SW task to customize"
+					},
+					"action": {
+						"type": "string",
+						"description": "SW action (build, generate, configure, run execution plan etc.)"
+					},
+					"compiler": {
+						"type": "string",
+						"description": "Compiler to run (gcc, clang, msvc etc.)"
+					},
+					"configuration": {
+						"type": "string",
+						"description": "Build configuration (debug, release, release with debug info)"
+					},
+					"libraries": {
+						"type": "string",
+						"description": "How to build libraries (static or shared)"
+					},
+					"buildCurrentFile": {
+						"type": "boolean",
+						"description": "Build only opened file"
 					}
 				}
 			}
